@@ -1,0 +1,32 @@
+
+<resources>
+
+    <style name="Base.Theme.CampusConnectSA"
+        parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- CampusConnect SA branding -->
+        <item name="colorPrimary">#0284C7</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#075985</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorTertiary">#7DD3FC</item>
+
+        <!-- Light theme colours -->
+        <item name="android:colorBackground">#F3F8FC</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#0F2942</item>
+        <item name="colorSurfaceVariant">#E2EDF5</item>
+        <item name="colorOnSurfaceVariant">#475569</item>
+
+        <!-- System bars -->
+        <item name="android:statusBarColor">#075985</item>
+        <item name="android:navigationBarColor">#F3F8FC</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+    </style>
+
+    <style name="Theme.CampusConnectSA"
+        parent="Base.Theme.CampusConnectSA" />
+
+</resources>

@@ -1,0 +1,238 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?android:attr/colorBackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CAMPUSCONNECT SA"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.08"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Announcements"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="27sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Stay updated with the latest academic and campus news."
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textSize="14sp"/>
+
+            <!-- Campus updates banner -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_dashboard_banner">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CAMPUS UPDATES"
+                    android:textColor="#E0F2FE"
+                    android:textSize="12sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="Everything important, in one place."
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvAnnouncementSummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="You have new updates to explore."
+                    android:textColor="#E0F2FE"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <!-- Search -->
+            <EditText
+                android:id="@+id/etSearchAnnouncement"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_dashboard_card"
+                android:backgroundTint="?attr/colorSurface"
+                android:hint="Search announcements..."
+                android:padding="14dp"
+                android:singleLine="true"
+                android:textColor="?attr/colorOnSurface"
+                android:textColorHint="?attr/colorOnSurfaceVariant"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Categories"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <!-- Category filters -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnAllAnnouncements"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:text="All"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:backgroundTint="?attr/colorPrimary"
+                        android:textColor="?attr/colorOnPrimary"/>
+
+                    <Button
+                        android:id="@+id/btnAcademicAnnouncements"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_marginStart="6dp"
+                        android:text="Academic"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:backgroundTint="?attr/colorSurface"
+                        android:textColor="?attr/colorOnSurface"/>
+
+                    <Button
+                        android:id="@+id/btnCampusAnnouncements"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_marginStart="6dp"
+                        android:text="Campus"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:backgroundTint="?attr/colorSurface"
+                        android:textColor="?attr/colorOnSurface"/>
+
+                    <Button
+                        android:id="@+id/btnUrgentAnnouncements"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_marginStart="6dp"
+                        android:text="Urgent"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:backgroundTint="?attr/colorSurface"
+                        android:textColor="?attr/colorOnSurface"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- Important updates -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="18dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Important updates"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvAnnouncementCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 updates"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/switchUnreadAnnouncements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Show unread only"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="14sp"/>
+
+            <Switch
+                android:id="@+id/switchSavedAnnouncements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Show saved announcements"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvNoAnnouncements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="No announcements found."
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/announcementListContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp"/>
+
+            <Button
+                android:id="@+id/btnMarkAllRead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Mark all as read"
+                android:textAllCaps="false"
+                android:textColor="?attr/colorPrimary"
+                android:backgroundTint="?attr/colorSurfaceVariant"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

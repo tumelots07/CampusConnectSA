@@ -1,0 +1,20 @@
+<resources>
+    <string name="welcome_back">Siyakwamukela futhi!</string>
+    <string name="sign_in">Ngena ngemvume</string>
+    <string name="email_address">Ikheli le-imeyili</string>
+    <string name="password">Iphasiwedi</string>
+    <string name="forgot_password">Ukhohlwe iphasiwedi?</string>
+    <string name="register">Bhalisa</string>
+    <string name="create_account">Dala i-akhawunti</string>
+    <string name="first_name">Igama</string>
+    <string name="surname">Isibongo</string>
+    <string name="student_number">Inombolo yomfundi</string>
+    <string name="confirm_password">Qinisekisa iphasiwedi</string>
+    <string name="settings">Izilungiselelo</string>
+    <string name="profile">Iphrofayela</string>
+    <string name="dark_mode">Imodi emnyama</string>
+    <string name="notifications">Izaziso</string>
+    <string name="language">Ulimi</string>
+    <string name="save_changes">Londoloza izinguquko</string>
+    <string name="logout">Phuma</string>
+</resources>

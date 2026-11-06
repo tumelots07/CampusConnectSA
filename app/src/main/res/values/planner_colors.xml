@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- CampusConnect SA colours -->
+    <color name="cc_navy">#075985</color>
+    <color name="cc_primary">#0284C7</color>
+    <color name="cc_card">#FFFFFF</color>
+
+    <!-- Text colours -->
+    <color name="cc_secondary_text">#64748B</color>
+    <color name="cc_body_text">#0F2942</color>
+
+    <!-- Status colours -->
+    <color name="cc_danger">#DC2626</color>
+    <color name="cc_warning">#D97706</color>
+    <color name="cc_success">#16A34A</color>
+
+</resources>

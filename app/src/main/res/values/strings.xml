@@ -1,0 +1,51 @@
+
+<resources>
+    <string name="app_name">CampusConnect SA</string>
+    <string name="welcome_back">Welcome back!</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email_address">Email address</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="register">Register</string>
+    <string name="create_account">Create Account</string>
+    <string name="first_name">First name</string>
+    <string name="surname">Surname</string>
+    <string name="student_number">Student number</string>
+    <string name="confirm_password">Confirm password</string>
+
+    <string name="settings">Settings</string>
+    <string name="profile">Profile</string>
+    <string name="dark_mode">Dark mode</string>
+    <string name="notifications">Notifications</string>
+    <string name="language">Language</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="logout">Log out</string>
+
+    <string name="settings_brand">CAMPUSCONNECT SA</string>
+    <string name="settings_description">Manage your profile and app preferences.</string>
+    <string name="my_profile">MY PROFILE</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="edit_personal_details">Edit personal details</string>
+    <string name="full_name">Full name</string>
+    <string name="cancel">Cancel</string>
+    <string name="app_preferences">App preferences</string>
+    <string name="enable_notifications">Enable notifications</string>
+    <string name="notification_description">Manage whether the app should send notification alerts.</string>
+    <string name="dark_mode_preference">Dark mode preference</string>
+    <string name="appearance_description">Save your preferred appearance setting.</string>
+    <string name="preferred_language">Preferred language</string>
+    <string name="account">Account</string>
+    <string name="settings_footer">CampusConnect SA • Student Life Assistant</string>
+
+    <string name="notifications_enabled">Notifications enabled</string>
+    <string name="notifications_disabled">Notifications disabled</string>
+    <string name="enter_full_name">Enter your full name</string>
+    <string name="enter_valid_email">Enter a valid email address</string>
+    <string name="login_again_to_update">Please log in again to update your profile.</string>
+    <string name="saving">Saving...</string>
+    <string name="profile_updated">Profile updated successfully!</string>
+    <string name="incomplete_server_response">Incomplete server response.</string>
+    <string name="profile_update_failed">Profile update failed.</string>
+    <string name="server_connection_failed">Unable to connect to the server.</string>
+    <string name="logout_confirmation">Are you sure you want to log out of CampusConnect SA?</string>
+</resources>

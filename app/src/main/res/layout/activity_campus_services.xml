@@ -1,0 +1,223 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?android:attr/colorBackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DISCOVER YOUR CAMPUS"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Campus Services"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Everything you need to make campus life easier."
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textSize="13sp" />
+
+            <!-- Featured section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:padding="18dp"
+                android:background="@drawable/bg_dashboard_banner">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✨  STUDENT SUPPORT"
+                    android:textColor="#D0EEFF"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:text="Need a helping hand?"
+                    android:textColor="#FFFFFF"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Explore academic, financial and personal support services available to students."
+                    android:textColor="#E0F2FE"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <!-- Search -->
+            <EditText
+                android:id="@+id/etSearchService"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_service_card"
+                android:backgroundTint="?attr/colorSurface"
+                android:hint="🔍  Search campus services..."
+                android:inputType="text"
+                android:padding="14dp"
+                android:textColor="?attr/colorOnSurface"
+                android:textColorHint="?attr/colorOnSurfaceVariant" />
+
+            <!-- Categories -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Browse by Category"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnAllServices"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:text="All"
+                        android:textAllCaps="false"
+                        android:backgroundTint="?attr/colorPrimary"
+                        android:textColor="?attr/colorOnPrimary" />
+
+                    <Button
+                        android:id="@+id/btnAcademicServices"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_marginStart="6dp"
+                        android:text="🎓 Academic"
+                        android:textAllCaps="false"
+                        android:backgroundTint="?attr/colorSurface"
+                        android:textColor="?attr/colorOnSurface" />
+
+                    <Button
+                        android:id="@+id/btnStudentServices"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_marginStart="6dp"
+                        android:text="🤝 Student Support"
+                        android:textAllCaps="false"
+                        android:backgroundTint="?attr/colorSurface"
+                        android:textColor="?attr/colorOnSurface" />
+
+                    <Button
+                        android:id="@+id/btnLibraryServices"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_marginStart="6dp"
+                        android:text="📚 Library"
+                        android:textAllCaps="false"
+                        android:backgroundTint="?attr/colorSurface"
+                        android:textColor="?attr/colorOnSurface" />
+
+                    <Button
+                        android:id="@+id/btnFinancialServices"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_marginStart="6dp"
+                        android:text="💰 Financial Aid"
+                        android:textAllCaps="false"
+                        android:backgroundTint="?attr/colorSurface"
+                        android:textColor="?attr/colorOnSurface" />
+
+                    <Button
+                        android:id="@+id/btnComputerServices"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_marginStart="6dp"
+                        android:text="💻 Computer Labs"
+                        android:textAllCaps="false"
+                        android:backgroundTint="?attr/colorSurface"
+                        android:textColor="?attr/colorOnSurface" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- Results -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Explore Services"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvServiceCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 services"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvNoServices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="No services found."
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/serviceListContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="14dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+.gradle/
+**/build/
+local.properties
+.idea/
+*.iml
+.env
+.env.*
+!.env.example
+node_modules/
+serviceAccountKey.json
+firebase-service-account.json
+*-service-account*.json
+
+CampusConnectSA.zip

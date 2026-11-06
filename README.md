@@ -201,7 +201,7 @@ Possible future improvements include:
 
 ## 13. Repository
 
-**GitHub:** 
+**GitHub:** https://github.com/tumelots07/CampusConnectSA
 
 Group Members:
 ST10452101_Tshiamo Tumelo Simango
